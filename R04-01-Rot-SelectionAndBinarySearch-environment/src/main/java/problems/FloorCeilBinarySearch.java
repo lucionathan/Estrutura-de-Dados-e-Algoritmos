@@ -21,22 +21,17 @@ public class FloorCeilBinarySearch implements FloorCeil {
     private Integer floorAux(Integer[] array, Integer x, int leftIndex, int rightIndex) {
         Integer middle = (leftIndex + rightIndex) / 2;
 
-        if (rightIndex - leftIndex >= 1) {
-
-
-            if (middle > 0) {
-                if (array[middle - 1] < x && array[middle] >= x) {
-                    return array[middle - 1];
-                }
-            }
-
-            if (x > array[middle]) {
-                floorAux(array, x, middle + 1, rightIndex);
-            }
-            floorAux(array, x, leftIndex, middle - 1);
-
+        if (array[0].equals(x) || array.length == 0) {
+            return null;
         }
-        return null;
+
+        if (middle > 0 && array[middle] >= x && array[middle - 1] < x) {
+            return array[middle - 1];
+        }
+        if (array[middle] > x) {
+            return floorAux(array, x, 0, middle - 1);
+        }
+        return floorAux(array, x, middle + 1, rightIndex);
     }
 
     @Override
@@ -46,24 +41,21 @@ public class FloorCeilBinarySearch implements FloorCeil {
     }
 
     private Integer ceilAux(Integer[] array, Integer x, int leftIndex, int rightIndex) {
+        Integer middle = (leftIndex + rightIndex) / 2;
 
-        if (rightIndex - leftIndex >= 1) {
-
-            Integer middle = (leftIndex + rightIndex) / 2;
-
-            if (middle < array.length) {
-                if (array[middle + 1] > x && array[middle] <= x) {
-                    return array[middle + 1];
-                }
-            }
-
-            if (x > array[middle]) {
-                ceilAux(array, x, middle + 1, rightIndex);
-            }
-            ceilAux(array, x, leftIndex, middle - 1);
-
+        if (array[array.length - 1].equals(x)) {
+            return null;
         }
-        return null;
+
+        if (middle < array.length - 1 && array[middle] <= x && array[middle + 1] > x) {
+            return array[middle + 1];
+        }
+        if (array[middle] > x) {
+            return ceilAux(array, x, 0, middle - 1);
+        }
+        return ceilAux(array, x, middle + 1, rightIndex);
+
+
     }
 
 }
