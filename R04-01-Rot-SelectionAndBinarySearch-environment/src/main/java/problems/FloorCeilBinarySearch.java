@@ -21,11 +21,12 @@ public class FloorCeilBinarySearch implements FloorCeil {
     private Integer floorAux(Integer[] array, Integer x, int leftIndex, int rightIndex) {
         Integer middle = (leftIndex + rightIndex) / 2;
 
-        if (array[0].equals(x) || array.length == 0) {
+        if ((array.length == 0) || array[0].equals(x)) {
             return null;
         }
 
-        if (middle > 0 && array[middle] >= x && array[middle - 1] < x) {
+        if (middle > 0 && array[middle] >= x && (array[middle - 1] < x || (array[middle] == x && array[middle - 1] ==x)))
+        {
             return array[middle - 1];
         }
         if (array[middle] > x) {
@@ -43,11 +44,12 @@ public class FloorCeilBinarySearch implements FloorCeil {
     private Integer ceilAux(Integer[] array, Integer x, int leftIndex, int rightIndex) {
         Integer middle = (leftIndex + rightIndex) / 2;
 
-        if (array[array.length - 1].equals(x)) {
+        if ((array.length == 0) || (array[array.length - 1].equals(x))) {
             return null;
         }
 
-        if (middle < array.length - 1 && array[middle] <= x && array[middle + 1] > x) {
+        if (middle < array.length - 1 && ((array[middle] <= x && array[middle + 1] > x) ||
+                (array[middle] == x && array[middle + 1] == x))) {
             return array[middle + 1];
         }
         if (array[middle] > x) {

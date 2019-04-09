@@ -37,6 +37,7 @@ public class FloorCeilBinarySearchTest {
 
     @Test
     public void ceil() {
+        System.out.println(arrayVazio.length);
         Integer x = 2;
         assertEquals(x, fc.ceil(array, 1));
         Integer y = 6;
@@ -45,5 +46,7 @@ public class FloorCeilBinarySearchTest {
         assertEquals(z, fc.ceil(array, 6));
         Integer p = null;
         assertEquals(p, fc.ceil(array, 290));
+        assertEquals(p, fc.ceil(arrayVazio, 240));
+
     }
 }
