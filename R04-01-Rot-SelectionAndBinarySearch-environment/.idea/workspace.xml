@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10cfd56d-53bc-4c61-a7ef-c5cfbca34019" name="Default Changelist" comment="">
+    <list default="true" id="c3a4d277-e081-4f93-ae53-96d138c7cb69" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatisticsSelectionImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatisticsSelectionImplTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -14,68 +14,39 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatisticsSelectionImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="72" column="1" lean-forward="true" selection-start-line="21" selection-end-line="72" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatisticsSelectionImplTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/problems/FloorCeilBinarySearch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="111" selection-start-line="27" selection-start-column="111" selection-end-line="27" selection-end-column="111" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatistics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
+            <state relative-caret-position="165">
               <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/problems/FloorCeilBinarySearchTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatisticsSelectionImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="277">
+              <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatisticsSelectionImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JUnit4 Test Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -83,10 +54,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/problems/FloorCeilBinarySearchTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/problems/FloorCeilBinarySearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatisticsSelectionImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatisticsSelectionImplTest.java" />
       </list>
     </option>
   </component>
@@ -102,7 +70,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -137,32 +104,23 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="orderStatistic" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="submission" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="create.test.in.the.same.root" value="true" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="orderStatistic" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -176,55 +134,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OrderStatisticsSelectionImplTest.getOrderStatistics">
-    <configuration name="FloorCeilBinarySearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="submission" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="problems.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="problems" />
-      <option name="MAIN_CLASS_NAME" value="problems.FloorCeilBinarySearchTest" />
-      <option name="METHOD_NAME" value="floor" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FloorCeilBinarySearchTest.ceil" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="submission" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="problems.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="problems" />
-      <option name="MAIN_CLASS_NAME" value="problems.FloorCeilBinarySearchTest" />
-      <option name="METHOD_NAME" value="ceil" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FloorCeilBinarySearchTest.floor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="submission" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="problems.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="problems" />
-      <option name="MAIN_CLASS_NAME" value="problems.FloorCeilBinarySearchTest" />
-      <option name="METHOD_NAME" value="floor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="OrderStatisticsSelectionImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="submission" />
       <extension name="coverage">
@@ -240,29 +150,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderStatisticsSelectionImplTest.getOrderStatistics" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="submission" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="orderStatistic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="orderStatistic" />
-      <option name="MAIN_CLASS_NAME" value="orderStatistic.OrderStatisticsSelectionImplTest" />
-      <option name="METHOD_NAME" value="getOrderStatistics" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OrderStatisticsSelectionImplTest.getOrderStatistics" />
         <item itemvalue="JUnit.OrderStatisticsSelectionImplTest" />
-        <item itemvalue="JUnit.FloorCeilBinarySearchTest.floor" />
-        <item itemvalue="JUnit.FloorCeilBinarySearchTest.ceil" />
-        <item itemvalue="JUnit.FloorCeilBinarySearchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -271,83 +161,71 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="10cfd56d-53bc-4c61-a7ef-c5cfbca34019" name="Default Changelist" comment="" />
-      <created>1554761477050</created>
+      <changelist id="c3a4d277-e081-4f93-ae53-96d138c7cb69" name="Default Changelist" comment="" />
+      <created>1554989002285</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1554761477050</updated>
-      <workItem from="1554761480459" duration="13333000" />
-      <workItem from="1554854387946" duration="921000" />
+      <updated>1554989002285</updated>
+      <workItem from="1554989004568" duration="800000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OrderStatisticsSelectionImplTest_getOrderStatistics - 2019.04.08 at 23h 15m 44s.xml">
-      <configuration name="OrderStatisticsSelectionImplTest.getOrderStatistics" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderStatisticsSelectionImplTest_getOrderStatistics - 2019.04.08 at 23h 17m 35s.xml">
-      <configuration name="OrderStatisticsSelectionImplTest.getOrderStatistics" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderStatisticsSelectionImplTest_getOrderStatistics - 2019.04.08 at 23h 27m 03s.xml">
-      <configuration name="OrderStatisticsSelectionImplTest.getOrderStatistics" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FloorCeilBinarySearchTest_floor - 2019.04.08 at 23h 28m 14s.xml">
-      <configuration name="FloorCeilBinarySearchTest.floor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderStatisticsSelectionImplTest_getOrderStatistics - 2019.04.08 at 23h 28m 39s.xml">
-      <configuration name="OrderStatisticsSelectionImplTest.getOrderStatistics" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderStatisticsSelectionImplTest - 2019.04.08 at 23h 28m 48s.xml">
+    <history-entry file="OrderStatisticsSelectionImplTest - 2019.04.11 at 10h 24m 27s.xml">
       <configuration name="OrderStatisticsSelectionImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderStatisticsSelectionImplTest - 2019.04.08 at 23h 28m 49s.xml">
+    <history-entry file="OrderStatisticsSelectionImplTest - 2019.04.11 at 10h 25m 08s.xml">
       <configuration name="OrderStatisticsSelectionImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderStatisticsSelectionImplTest_getOrderStatistics - 2019.04.09 at 21h 01m 08s.xml">
-      <configuration name="OrderStatisticsSelectionImplTest.getOrderStatistics" configurationId="JUnit" />
+    <history-entry file="OrderStatisticsSelectionImplTest - 2019.04.11 at 10h 25m 56s.xml">
+      <configuration name="OrderStatisticsSelectionImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderStatisticsSelectionImplTest_getOrderStatistics - 2019.04.09 at 21h 02m 46s.xml">
-      <configuration name="OrderStatisticsSelectionImplTest.getOrderStatistics" configurationId="JUnit" />
+    <history-entry file="OrderStatisticsSelectionImplTest - 2019.04.11 at 10h 26m 21s.xml">
+      <configuration name="OrderStatisticsSelectionImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderStatisticsSelectionImplTest_getOrderStatistics - 2019.04.09 at 21h 03m 06s.xml">
-      <configuration name="OrderStatisticsSelectionImplTest.getOrderStatistics" configurationId="JUnit" />
+    <history-entry file="OrderStatisticsSelectionImplTest - 2019.04.11 at 10h 26m 28s.xml">
+      <configuration name="OrderStatisticsSelectionImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrderStatisticsSelectionImplTest - 2019.04.11 at 10h 26m 35s.xml">
+      <configuration name="OrderStatisticsSelectionImplTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14254000" />
+    <option name="totallyTimeSpent" value="800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="739" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25378788" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32847896" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39967638" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32847896" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32847896" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,69 +234,52 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/problems/FloorCeilBinarySearchTest.java</url>
-          <line>22</line>
-          <properties class="problems.FloorCeilBinarySearchTest" method="floor">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatisticsSelectionImplTest.java</url>
-          <line>19</line>
-          <properties class="orderStatistic.OrderStatisticsSelectionImplTest" method="getOrderStatistics">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/problems/FloorCeilBinarySearchTest.java</url>
-          <line>30</line>
+          <url>file://$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatisticsSelectionImplTest.java</url>
+          <line>7</line>
           <properties />
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/problems/FloorCeilBinarySearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="111" selection-start-line="27" selection-start-column="111" selection-end-line="27" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/problems/FloorCeilBinarySearchTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatistics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatisticsSelectionImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+        <state relative-caret-position="255">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatisticsSelectionImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="72" column="1" lean-forward="true" selection-start-line="21" selection-end-line="72" selection-end-column="1" />
+        <state relative-caret-position="277">
+          <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/orderStatistic/OrderStatistics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>10.0.2+13</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
