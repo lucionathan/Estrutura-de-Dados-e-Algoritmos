@@ -16,7 +16,6 @@ public class StudentSortingTest {
 	private Integer[] vetorVazio = {};
 	private Integer[] vetorValoresRepetidos;
 	private Integer[] vetorValoresIguais;
-	private Integer[] vetorMenorQueZero;
 
 	public AbstractSorting<Integer> implementation;
 
@@ -28,27 +27,17 @@ public class StudentSortingTest {
 				11, 18, 36 });
 		populaVetorRepetido(new Integer[] { 4, 9, 3, 4, 0, 5, 1, 4 });
 		populaVetorIgual(new Integer[] { 6, 6, 6, 6, 6, 6 });
-		pupulaVetorMenorQueZero(new Integer[] {-1, -10, 20, 6,3,2,1,2,4});
 
 		getImplementation();
 	}
-
 
 	// // MÉTODOS AUXILIARES DA INICIALIZAÇÃO
 	/**
 	 * Método que inicializa a implementação a ser testada com a implementação
 	 * do aluno
 	 */
-
 	private void getImplementation() {
-		// TODO O aluno deve instanciar sua implementação abaixo ao invés de
-		// null
 		this.implementation = new CountingSort();
-	}
-
-	private void pupulaVetorMenorQueZero(Integer[] arrayPadrao) {
-		this.vetorMenorQueZero = Arrays.copyOf(arrayPadrao, arrayPadrao.length);
-
 	}
 
 	public void populaVetorTamanhoPar(Integer[] arrayPadrao) {

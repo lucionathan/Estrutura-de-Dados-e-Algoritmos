@@ -2,6 +2,8 @@ package sorting.linearSorting;
 
 import sorting.AbstractSorting;
 
+import java.util.Arrays;
+
 /**
  * Classe que implementa a estratégia de Counting Sort vista em sala. Procure
  * evitar desperdicio de memoria alocando o array de contadores com o tamanho
@@ -12,76 +14,46 @@ public class CountingSort extends AbstractSorting<Integer> {
     @Override
     public void sort(Integer[] array, int leftIndex, int rightIndex) {
 
-        Integer[] result = criaArrayFinal(array, leftIndex);
+        if (leftIndex < rightIndex && leftIndex >= 0 && rightIndex < array.length && array.length != 0) {
 
-        int min = getMenor(array, leftIndex, rightIndex);
+            Integer[] aux = new Integer[getMaior(array, leftIndex, rightIndex) + 1];
 
-        Integer[] temp = criaArrayAux(array, leftIndex, rightIndex, min);
+            for (int i = 0; i < aux.length; i++) {
+                aux[i] = 0;
+            }
 
+            for (int i = leftIndex; i <= rightIndex; i++) {
+                aux[array[i]]++;
+            }
 
-        for (int i = leftIndex; i < rightIndex; i++) {
+            for (int i = 1; i < aux.length; i++) {
+                aux[i] = aux[i] + aux[i - 1];
+            }
 
-            temp[array[i] - min] = temp[array[i] - min]++;
-        }
+            Integer[] modelo = new Integer[array.length];
 
-        for (int i = 1; i < temp.length; i++) {
+            for (int i = rightIndex; i >= leftIndex; i--) {
+                modelo[aux[array[i]] - 1] = array[i];
+                aux[array[i]]--;
+            }
 
-            temp[i] = temp[i] + temp[i - 1];
-
-        }
-
-        for (int i = array.length; i >= 0; i--) {
-
-            result[temp[array[i] - min]] = array[i];
-            temp[array[i] - min] = temp[array[i] - min]--;
-
-        }
-    }
-
-
-    private Integer[] criaArrayFinal(Integer[] array, int leftIndex) {
-
-        Integer[] result = new Integer[array.length];
-
-        for (int i = 0; i < leftIndex; i++) {
-            result[i] = array[i];
-        }
-
-        return result;
-
-    }
-
-
-    private Integer[] criaArrayAux(Integer[] array, int leftIndex, int rightIndex, int min) {
-
-        Integer[] retorno;
-        int max = array[leftIndex];
-
-        for (int i = leftIndex; i < rightIndex; i++) {
-            if (array[i] > max) {
-                max = array[i];
+            for (int i = leftIndex; i <= rightIndex; i++) {
+                array[i] = modelo[i];
             }
         }
 
-        max = max - min;
-
-        retorno = new Integer[max];
-
-        return retorno;
     }
 
-    private int getMenor(Integer[] array, int leftIndex, int rightIndex) {
-
-        int min = array[leftIndex];
-
-        for (int i = leftIndex; i < rightIndex; i++) {
-            if (array[i] < min) {
-                min = array[i];
+    private int getMaior(Integer[] array, int leftIndex, int rightIndex) {
+        int maior = array[leftIndex];
+        for (int i = leftIndex + 1; i <= rightIndex; i++) {
+            if (maior < array[i]) {
+                maior = array[i];
             }
         }
 
-        return min;
-
+        return maior;
     }
+
 
 }
