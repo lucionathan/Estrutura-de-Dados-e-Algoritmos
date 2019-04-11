@@ -20,5 +20,10 @@ public class OrderStatisticsSelectionImplTest {
     public void getOrderStatistics() {
         assertEquals(12, ossi.getOrderStatistics(array, 5));
         assertEquals(523, ossi.getOrderStatistics(array, 11));
+        assertEquals(3, ossi.getOrderStatistics(array, 2));
+        assertEquals(4, ossi.getOrderStatistics(array, 3));
+        assertEquals(6, ossi.getOrderStatistics(array, 4));
+        assertEquals(78, ossi.getOrderStatistics(array, 8));
+
     }
 }
