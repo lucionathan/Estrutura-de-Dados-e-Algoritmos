@@ -5,42 +5,49 @@ import adt.linkedList.DoubleLinkedListImpl;
 
 public class QueueDoubleLinkedListImpl<T> implements Queue<T> {
 
-	protected DoubleLinkedList<T> list;
-	protected int size;
+    protected DoubleLinkedList<T> list;
+    protected int size;
 
-	public QueueDoubleLinkedListImpl(int size) {
-		this.size = size;
-		this.list = new DoubleLinkedListImpl<T>();
-	}
+    public QueueDoubleLinkedListImpl(int size) {
+        this.size = size;
+        this.list = new DoubleLinkedListImpl<T>();
+    }
 
-	@Override
-	public void enqueue(T element) throws QueueOverflowException {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
-	}
+    @Override
+    public void enqueue(T element) throws QueueOverflowException {
+        if (isFull()) {
+            throw new QueueOverflowException();
+        }
 
-	@Override
-	public T dequeue() throws QueueUnderflowException {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
-	}
+        if (element != null) {
+            list.insert(element);
+        }
+    }
 
-	@Override
-	public T head() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
-	}
+    @Override
+    public T dequeue() throws QueueUnderflowException {
+        if (isEmpty()) {
+            throw new QueueUnderflowException();
+        }
+        T removed = ((DoubleLinkedListImpl<T>) list).getHead().getData();
+        return removed;
 
-	@Override
-	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
-	}
+    }
 
-	@Override
-	public boolean isFull() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
-	}
+    @Override
+    public T head() {
+
+        return ((DoubleLinkedListImpl<T>) list).getHead().getData();
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return (list.size() == 0);
+    }
+
+    @Override
+    public boolean isFull() {
+        return (list.size() == size);
+    }
 
 }
