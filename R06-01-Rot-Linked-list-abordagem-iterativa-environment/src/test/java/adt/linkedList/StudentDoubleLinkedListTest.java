@@ -33,6 +33,8 @@ public class StudentDoubleLinkedListTest extends StudentLinkedListTest {
 
     @Test
     public void testInsertFirst() {
+
+
         ((DoubleLinkedList<Integer>) lista1).insertFirst(4);
         Assert.assertArrayEquals(new Integer[]{4, 3, 2, 1}, lista1.toArray());
     }

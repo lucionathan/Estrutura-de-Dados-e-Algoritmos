@@ -49,26 +49,24 @@ public class SingleLinkedListImpl<T> implements LinkedList<T> {
         return returnVar;
     }
 
+
     @Override
     public void insert(T element) {
-
         if (element != null) {
-            SingleLinkedListNode<T> newHead;
-            SingleLinkedListNode<T> auxHead = head;
 
+            SingleLinkedListNode<T> newHead;
+            SingleLinkedListNode<T> auxHead = getHead();
 
             if (auxHead.isNIL()) {
                 newHead = new SingleLinkedListNode<T>(element, auxHead);
                 setHead(newHead);
-
             } else {
                 while (!auxHead.getNext().isNIL()) {
                     auxHead = auxHead.getNext();
-
                 }
+
                 newHead = new SingleLinkedListNode<T>(element, auxHead.getNext());
                 auxHead.setNext(newHead);
-
             }
         }
     }
