@@ -1,6 +1,7 @@
 package adt.linkedList;
 
-public class SingleLinkedListImpl<T> implements LinkedList<T> {
+public class
+SingleLinkedListImpl<T> implements LinkedList<T> {
 
     protected SingleLinkedListNode<T> head;
 
