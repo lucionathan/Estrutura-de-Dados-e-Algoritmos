@@ -27,7 +27,7 @@ public class HashFunctionMultiplicationMethod<T> implements
 	public int hash(T element) {
 		int hashKey = -1;
 		int key = element.hashCode();
-		double fractionalx'Part = key * A - Math.floor(key * A);
+		double fractionalPart = key * A - Math.floor(key * A);
 		hashKey = (int) (tableSize * fractionalPart);
 
 		return hashKey;
