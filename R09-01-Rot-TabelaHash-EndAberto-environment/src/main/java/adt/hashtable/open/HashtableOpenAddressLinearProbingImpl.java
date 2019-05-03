@@ -17,12 +17,7 @@ public class HashtableOpenAddressLinearProbingImpl<T extends Storable> extends A
     @Override
     public void insert(T element) {
         if (element != null) {
-            int n = 0;
-            while ((table[hash(element, n)] != null)
-                    && !(table[hash(element, n)] instanceof DELETED && n < table.length && element.equals(hash(element, n)))) {
-                COLLISIONS++;
-                n++;
-            }
+            int n = insertAux(element);
 
             if (!isFull()) {
                 this.table[hash(element, n)] = element;
@@ -34,14 +29,11 @@ public class HashtableOpenAddressLinearProbingImpl<T extends Storable> extends A
     @Override
     public void remove(T element) {
         if (element != null) {
-            int n = 0;
-            while ((table[hash(element, n)] != null) && !(table[hash(element, n)].equals(element)) && n < table.length) {
-                n++;
-            }
+            int n = getProbe(element);
 
             if (table[hash(element, n)] != null) {
                 if (element.equals(table[hash(element, n)])) {
-                    table[hash(element, n)] = new DELETED();
+                    table[hash(element, n)] = DEL;
                     elements--;
                 }
             }
@@ -52,10 +44,7 @@ public class HashtableOpenAddressLinearProbingImpl<T extends Storable> extends A
     @Override
     public T search(T element) {
         if (element != null) {
-            int n = 0;
-            while (table[hash(element, n)] != null && !(table[hash(element, n)].equals(element)) && n < table.length) {
-                n++;
-            }
+            int n = getProbe(element);
 
             if (element.equals(table[hash(element, n)])) {
                 return element;
@@ -68,10 +57,7 @@ public class HashtableOpenAddressLinearProbingImpl<T extends Storable> extends A
     public int indexOf(T element) {
 
         if (element != null) {
-            int n = 0;
-            while (table[hash(element, n)] != null && !(table[hash(element, n)].equals(element)) && n < table.length) {
-                n++;
-            }
+            int n = getProbe(element);
 
             if (element.equals(table[hash(element, n)])) {
                 return hash(element, n);
@@ -80,7 +66,6 @@ public class HashtableOpenAddressLinearProbingImpl<T extends Storable> extends A
         return -1;
     }
 
-
     private int hash(T element, int probe) {
         int hashIndex = -1;
         if (hashFunction instanceof HashFunctionOpenAddress) {
@@ -88,4 +73,27 @@ public class HashtableOpenAddressLinearProbingImpl<T extends Storable> extends A
         }
         return hashIndex;
     }
+
+    private int getProbe(T element) {
+        int n = 0;
+        while (table[hash(element, n)] != null && !(table[hash(element, n)].equals(element)) && n < table.length) {
+            n++;
+        }
+        return n;
+    }
+
+    private int insertAux(T element) {
+        int n = 0;
+
+        while (table[hash(element, n)] != null
+                && !(table[hash(element, n)].equals(DEL) &&
+                n < table.length &&
+                element.equals(table[hash(element, n)])))
+        {
+            COLLISIONS++;
+            n++;
+        }
+        return n;
+    }
+
 }
