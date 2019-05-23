@@ -7,6 +7,8 @@ import adt.hashtable.hashfunction.HashFunctionClosedAddressMethod;
 import adt.hashtable.hashfunction.HashFunctionFactory;
 
 import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 
 public class HashtableClosedAddressImpl<T> extends
         AbstractHashtableClosedAddress<T> {
@@ -42,7 +44,7 @@ public class HashtableClosedAddressImpl<T> extends
             // the immediate prime
             // above
         }
-        initiateInternalTable(realSize);
+            initiateInternalTable(realSize);
         HashFunction function = HashFunctionFactory.createHashFunction(method,
                 realSize);
         this.hashFunction = function;
@@ -66,6 +68,7 @@ public class HashtableClosedAddressImpl<T> extends
 
 
     private LinkedList<T> getLinkedList(T element) {
+        T[] a = (T[]) new LinkedList[10];
         LinkedList<T> result = null;
         int hashIndex = hash(element);
         if (hashIndex != -1) {
@@ -117,6 +120,8 @@ public class HashtableClosedAddressImpl<T> extends
 
     @Override
     public int indexOf(T element) {
+        Map mapa;
+        mapa.contains
         int returnAux = -1;
         if (myContains(element, getLinkedList(element))) {
             returnAux = hash(element);
