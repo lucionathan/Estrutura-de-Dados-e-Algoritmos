@@ -89,8 +89,7 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 
         if (root.isEmpty()) {
             result = null;
-        }
-        else {
+        } else {
             result = maximum(root);
         }
 
@@ -111,8 +110,7 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 
         if (root.isEmpty()) {
             result = null;
-        }
-        else {
+        } else {
             result = minimum(root);
         }
 
@@ -138,11 +136,9 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 
         if (node.isEmpty()) {
             sucessor = null;
-        }
-        else if (!node.getRight().isEmpty()) {
+        } else if (!node.getRight().isEmpty()) {
             sucessor = minimum((BSTNode<T>) node.getRight());
-        }
-        else {
+        } else {
             BSTNode<T> parent = (BSTNode<T>) node.getParent();
 
             while (parent != null && isRightChild(node, parent)) {
@@ -171,11 +167,9 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 
         if (node.isEmpty()) {
             result = null;
-        }
-        else if (!node.getLeft().isEmpty()) {
+        } else if (!node.getLeft().isEmpty()) {
             result = maximum((BSTNode<T>) node.getLeft());
-        }
-        else {
+        } else {
             BSTNode<T> parent = (BSTNode<T>) node.getParent();
 
             while (parent != null && isLeftChild(node, parent)) {
@@ -202,28 +196,77 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
     }
 
     private void remove(BSTNode<T> node) {
-        if (node.isLeaf()) {
-            node.setData(null);
-            node.setLeft(null);
-            node.setRight(null);
-        }
-        else {
-
-            BSTNode<T> sucessor = sucessor(node);
-            
-            if (sucessor != null && sucessor.getData().compareTo(node.getData()) != 0) {
-                node.setData(sucessor.getData());
-                remove(sucessor);
-            }
-            else {
-                BSTNode<T> predecessor = predecessor(node);
-                if (predecessor != null && predecessor.getData().compareTo(node.getData()) != 0) {
-                    node.setData(predecessor.getData());
-                    remove(predecessor);
-                }
+        if (node != null) {
+            if (node.isLeaf()) {
+                removeFolha(node);
+            } else if (isOnlyChild(node) == 1) {
+                removeComUmFilho(node);
+            } else {
+                removeComDoisFilhos(node);
             }
         }
     }
+
+    private void removeFolha(BSTNode<T> node) {
+        node.setData(null);
+        node.setLeft(null);
+        node.setRight(null);
+    }
+
+    private void removeComUmFilho(BSTNode<T> node) {
+        if (!node.equals(this.root)) {
+            if (isLeftChild(node, (BSTNode<T>) node.getParent())) {
+                if (!node.getLeft().isEmpty()) {
+                    node.getParent().setLeft(node.getLeft());
+                    node.getLeft().setParent(node.getParent());
+                } else {
+                    node.getParent().setLeft(node.getRight());
+                    node.getRight().setParent(node.getParent());
+
+                }
+            } else {
+                if (!node.getLeft().isEmpty()) {
+                    node.getParent().setRight(node.getLeft());
+                    node.getLeft().setParent(node.getParent());
+                } else {
+                    node.getParent().setRight(node.getRight());
+                    node.getRight().setParent(node.getParent());
+                }
+            }
+        } else {
+            T newRoot = null;
+            if (!node.getLeft().isEmpty()) {
+                newRoot = maximum((BSTNode<T>) node.getLeft()).getData();
+            } else {
+                newRoot = minimum((BSTNode<T>) node.getRight()).getData();
+            }
+
+            remove(newRoot);
+            root.setData(newRoot);
+        }
+    }
+
+    private void removeComDoisFilhos(BSTNode<T> node) {
+        T newData = minimum((BSTNode<T>) node.getRight()).getData();
+        remove(newData);
+        node.setData(newData);
+    }
+
+    private int isOnlyChild(BSTNode<T> node) {
+
+        int count = 0;
+
+        if (!node.getLeft().isEmpty()) {
+            count++;
+        }
+
+        if (!node.getRight().isEmpty()) {
+            count++;
+        }
+
+        return count;
+    }
+
 
     @Override
     public T[] preOrder() {

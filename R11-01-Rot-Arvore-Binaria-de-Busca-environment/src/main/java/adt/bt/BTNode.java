@@ -5,82 +5,82 @@ package adt.bt;
  * to be comparable.
  */
 public class BTNode<T> {
-	protected T data;
-	protected BTNode<T> left;
-	protected BTNode<T> right;
-	protected BTNode<T> parent;
+    protected T data;
+    protected BTNode<T> left;
+    protected BTNode<T> right;
+    protected BTNode<T> parent;
 
-	public BTNode(T data, BTNode<T> left, BTNode<T> right, BTNode<T> parent) {
-		this.data = data;
-		this.left = left;
-		this.right = right;
-		this.parent = parent;
-	}
+    public BTNode(T data, BTNode<T> left, BTNode<T> right, BTNode<T> parent) {
+        this.data = data;
+        this.left = left;
+        this.right = right;
+        this.parent = parent;
+    }
 
-	public BTNode() {
-	}
+    public BTNode() {
+    }
 
-	public boolean isEmpty() {
-		return this.data == null;
-	}
+    public boolean isEmpty() {
+        return this.data == null;
+    }
 
-	public boolean isLeaf() {
-		return this.data != null && this.left.isEmpty() && this.right.isEmpty();
-	}
-	
-	@Override
-	public String toString() {
-		String resp = "NIL";
-		if (!isEmpty()) {
-			resp = data.toString();
-		}
-		return resp;
-	}
+    public boolean isLeaf() {
+        return this.data != null && this.left.isEmpty() && this.right.isEmpty();
+    }
 
-	@SuppressWarnings("unchecked")
-	@Override
-	public boolean equals(Object obj) {
-		boolean resp = false;
-		if (obj instanceof BTNode) {
-			if (!this.isEmpty() && !((BTNode<T>) obj).isEmpty()) {
-				resp = this.data.equals(((BTNode<T>) obj).data);
-			} else {
-				resp = this.isEmpty() && ((BTNode<T>) obj).isEmpty();
-			}
+    @Override
+    public String toString() {
+        String resp = "NIL";
+        if (!isEmpty()) {
+            resp = data.toString();
+        }
+        return resp;
+    }
 
-		}
-		return resp;
-	}
+    @SuppressWarnings("unchecked")
+    @Override
+    public boolean equals(Object obj) {
+        boolean resp = false;
+        if (obj instanceof BTNode) {
+            if (!this.isEmpty() && !((BTNode<T>) obj).isEmpty()) {
+                resp = this.data.equals(((BTNode<T>) obj).data) && this.getLeft().equals(((BTNode<T>) obj).getLeft());
+            } else {
+                resp = this.isEmpty() && ((BTNode<T>) obj).isEmpty();
+            }
 
-	public T getData() {
-		return data;
-	}
+        }
+        return resp;
+    }
 
-	public void setData(T data) {
-		this.data = data;
-	}
+    public T getData() {
+        return data;
+    }
 
-	public BTNode<T> getLeft() {
-		return left;
-	}
+    public void setData(T data) {
+        this.data = data;
+    }
 
-	public void setLeft(BTNode<T> left) {
-		this.left = left;
-	}
+    public BTNode<T> getLeft() {
+        return left;
+    }
 
-	public BTNode<T> getRight() {
-		return right;
-	}
+    public void setLeft(BTNode<T> left) {
+        this.left = left;
+    }
 
-	public void setRight(BTNode<T> right) {
-		this.right = right;
-	}
+    public BTNode<T> getRight() {
+        return right;
+    }
 
-	public BTNode<T> getParent() {
-		return parent;
-	}
+    public void setRight(BTNode<T> right) {
+        this.right = right;
+    }
 
-	public void setParent(BTNode<T> parent) {
-		this.parent = parent;
-	}
+    public BTNode<T> getParent() {
+        return parent;
+    }
+
+    public void setParent(BTNode<T> parent) {
+        this.parent = parent;
+    }
 }

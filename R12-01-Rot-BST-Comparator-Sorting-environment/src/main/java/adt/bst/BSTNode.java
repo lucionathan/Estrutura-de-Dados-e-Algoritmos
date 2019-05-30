@@ -55,6 +55,4 @@ public class BSTNode<T extends Comparable<T>> extends BTNode<T> {
 	    this.parent = builder.parent;
 	    
 	}
-
-
 }
