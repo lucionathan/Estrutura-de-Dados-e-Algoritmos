@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ec875ab-9eca-45fa-b126-b351546ac292" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/adt/bst/BSTImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/adt/bst/BSTImpl.class" afterDir="false" />
-    </list>
+    <list default="true" id="f7b70004-f225-476d-8056-8860c7dc9913" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,42 +17,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/adt/bst/BSTNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/adt/bst/BSTImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="31" selection-end-line="348" />
-              <folding>
-                <element signature="e#8975#8976#0" expanded="true" />
-                <element signature="e#9008#9009#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="3720">
+              <caret line="256" column="13" selection-start-line="256" selection-start-column="13" selection-end-line="256" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/adt/avltree/AVLTreeImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="74" selection-end-line="144" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/adt/bst/StudentBSTTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/adt/bt/Util.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="107" selection-start-line="107" selection-end-line="107" />
+            <state relative-caret-position="180">
+              <caret line="15" column="40" selection-end-line="61" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>searc</find>
-    </findStrings>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/adt/bst/StudentBSTTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/adt/bt/Util.java" />
         <option value="$PROJECT_DIR$/src/main/java/adt/bst/BSTImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/adt/avltree/AVLTreeImpl.java" />
       </list>
     </option>
   </component>
@@ -65,41 +69,40 @@
     <option name="width" value="655" />
     <option name="height" value="741" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="submission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="R11-01-Rot-Arvore-Binaria-de-Busca-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="R14-01-Rot-ArvoreAVL-environment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="submission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="R11-01-Rot-Arvore-Binaria-de-Busca-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="R14-01-Rot-ArvoreAVL-environment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="submission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="R11-01-Rot-Arvore-Binaria-de-Busca-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="R14-01-Rot-ArvoreAVL-environment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="submission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="R11-01-Rot-Arvore-Binaria-de-Busca-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="R14-01-Rot-ArvoreAVL-environment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="submission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="R11-01-Rot-Arvore-Binaria-de-Busca-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="R14-01-Rot-ArvoreAVL-environment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -107,7 +110,16 @@
             </path>
             <path>
               <item name="submission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="R11-01-Rot-Arvore-Binaria-de-Busca-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="R14-01-Rot-ArvoreAVL-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="adt" type="462c0819:PsiDirectoryNode" />
+              <item name="avltree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="submission" type="b2602c69:ProjectViewProjectNode" />
+              <item name="R14-01-Rot-ArvoreAVL-environment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -116,36 +128,47 @@
             </path>
             <path>
               <item name="submission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="R11-01-Rot-Arvore-Binaria-de-Busca-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="R14-01-Rot-ArvoreAVL-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="adt" type="462c0819:PsiDirectoryNode" />
+              <item name="bt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="submission" type="b2602c69:ProjectViewProjectNode" />
+              <item name="R14-01-Rot-ArvoreAVL-environment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="submission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="R11-01-Rot-Arvore-Binaria-de-Busca-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="R14-01-Rot-ArvoreAVL-environment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="submission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="R11-01-Rot-Arvore-Binaria-de-Busca-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="R14-01-Rot-ArvoreAVL-environment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bst" type="462c0819:PsiDirectoryNode" />
+              <item name="avltree" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -162,16 +185,16 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="StudentBSTTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentAVLTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="submission" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="adt.bst.*" />
+          <option name="PATTERN" value="adt.avltree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="adt.bst" />
-      <option name="MAIN_CLASS_NAME" value="adt.bst.StudentBSTTest" />
+      <option name="PACKAGE_NAME" value="adt.avltree" />
+      <option name="MAIN_CLASS_NAME" value="adt.avltree.StudentAVLTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -179,7 +202,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StudentBSTTest" />
+        <item itemvalue="JUnit.StudentAVLTest" />
       </list>
     </recent_temporary>
   </component>
@@ -188,47 +211,26 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7ec875ab-9eca-45fa-b126-b351546ac292" name="Default Changelist" comment="" />
-      <created>1559244900052</created>
+      <changelist id="f7b70004-f225-476d-8056-8860c7dc9913" name="Default Changelist" comment="" />
+      <created>1559695342374</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1559244900052</updated>
-      <workItem from="1559244903690" duration="4772000" />
-      <workItem from="1559604911748" duration="598000" />
+      <updated>1559695342374</updated>
+      <workItem from="1559695345938" duration="1594000" />
+      <workItem from="1559860720751" duration="110000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StudentBSTTest - 2019.05.30 at 17h 09m 54s.xml">
-      <configuration name="StudentBSTTest" configurationId="JUnit" />
+    <history-entry file="StudentAVLTest - 2019.06.04 at 22h 04m 44s.xml">
+      <configuration name="StudentAVLTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentBSTTest - 2019.05.30 at 17h 11m 12s.xml">
-      <configuration name="StudentBSTTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentBSTTest - 2019.05.30 at 17h 11m 36s.xml">
-      <configuration name="StudentBSTTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentBSTTest - 2019.05.30 at 17h 11m 54s.xml">
-      <configuration name="StudentBSTTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentBSTTest - 2019.05.30 at 17h 12m 08s.xml">
-      <configuration name="StudentBSTTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentBSTTest - 2019.05.30 at 17h 17m 24s.xml">
-      <configuration name="StudentBSTTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentBSTTest - 2019.05.30 at 17h 18m 25s.xml">
-      <configuration name="StudentBSTTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentBSTTest - 2019.05.30 at 17h 19m 36s.xml">
-      <configuration name="StudentBSTTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentBSTTest - 2019.05.30 at 17h 34m 20s.xml">
-      <configuration name="StudentBSTTest" configurationId="JUnit" />
+    <history-entry file="StudentAVLTest - 2019.06.04 at 22h 12m 42s.xml">
+      <configuration name="StudentAVLTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5370000" />
+    <option name="totallyTimeSpent" value="1704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="27" width="1310" height="741" extended-state="6" />
@@ -243,7 +245,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23966943" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294893" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -253,7 +255,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3289256" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3294893" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -269,21 +271,34 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/adt/bst/BSTImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/adt/bst/BSTNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="31" selection-end-line="348" />
-          <folding>
-            <element signature="e#8975#8976#0" expanded="true" />
-            <element signature="e#9008#9009#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/adt/bst/StudentBSTTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/adt/bst/BSTImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        <state relative-caret-position="3720">
+          <caret line="256" column="13" selection-start-line="256" selection-start-column="13" selection-end-line="256" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/adt/avltree/AVLTreeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="74" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/adt/bt/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="40" selection-end-line="61" />
+          <folding>
+            <element signature="e#1587#1617#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -292,7 +307,7 @@
     <states>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>11.0.3 (3)</last-edited>
+          <last-edited>11.0.3 (2)</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
